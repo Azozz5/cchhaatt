@@ -1,0 +1,43 @@
+﻿sudo apt-get update
+-------------------------
+sudo apt-get install mysql-server
+-----------------------
+mysql
+---------------------
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'ymhost';
+----------------------
+CREATE DATABASE ym;
+--------------------------
+quit
+----------------
+sudo mysql_secure_installation utility
+-------------------------
+ymhost
+--------------------------
+تختار 0
+----------------------
+sudo apt update
+----------------------
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+----------------------
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+---------------------
+source ~/.bashrc
+---------------------
+nvm install node
+--------------------
+sudo apt install npm
+------------------------------
+
+-----------------------------------------
+sudo npm install pm2@latest -g
+-------------------------------------
+بعدها ترفع الملفات للسيرفر بعدها
+----------------------------
+1- npm i
+----------------------------
+2- npm i -g pm2
+----------------------------
+3- pm2 start server.js

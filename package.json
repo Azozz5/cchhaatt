@@ -1,0 +1,56 @@
+{
+  "name": "seobaqer",
+  "version": "1.0.5",
+  "description": "This chat by BAQER AL ARDAWE",
+  "main": "server.js",
+  "scripts": {
+    "start": "pm2 start server.js",
+    "stop": "pm2 stop server.js",
+    "restart": "pm2 restart server.js"
+  },
+  "dependencies": {
+    "@citoyasha/yt-search": "^1.0.1",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "bluebird": "",
+    "child_process": "^1.0.2",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "ddos": "^0.2.1",
+    "device-uuid": "^1.0.4",
+    "disable-devtool": "^0.3.4",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "fastify": "^4.12.0",
+    "formidable": "^1.2.2",
+    "forwarded-for": "^1.1.0",
+    "g": "^2.0.1",
+    "graphql-http": "^1.12.0",
+    "helmet": "^6.0.1",
+    "http": "",
+    "jimp": "^0.16.1",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1",
+    "mysqldump": "^3.2.0",
+    "node-pre-gyp": "^0.17.0",
+    "npm": "^7.11.2",
+    "password-hash": "^1.2.2",
+    "peer": "^0.6.1",
+    "peerjs": "^1.4.7",
+    "react-native-device-uuid": "^1.2.0",
+    "readline": "^1.3.0",
+    "redis": "^4.5.1",
+    "request": "^2.88.2",
+    "request-country": "^0.1.6",
+    "rimraf": "^3.0.2",
+    "socket.io": "^4.6.1",
+    "uniqid": "^5.4.0",
+    "update": "^0.7.4"
+  },
+  "engines": {
+    "node": "13.10.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "sw-precache": "^3.2.0"
+  }
+}
