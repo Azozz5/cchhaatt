@@ -1,0 +1,812 @@
+﻿<!DOCTYPE html>
+<html lang="ar" hreflang="ar-sa">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta property="og:title" content="<%= title %>" />
+        <meta property="og:description" content="<%= description %>" />
+        <meta property="og:image" content="<%= logo %>" />
+        <link rel="icon" type="image/x-icon" href="<%= logo %>" />
+        <meta name="google" value="notranslate" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="viewport" content="user-scalable=0, width=400" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <title><%= title %></title>
+        <meta name="description" content="<%= description %>" />
+        <meta content="<%= keywords %>" name="keywords" />
+        <script src="js/jquery-1.11.1.min.js?x7.js"></script>
+        <script src="js/socket.io.2.0.3.js?x7.js"></script>
+        <link rel="stylesheet" href="css/font-awesome.min.css?x7.js" />
+        <script src="js/client.min.js?x7.js"></script>
+        <script src="js/bootstrap-5.js?x7.js"></script>
+        <script src="js/peer.js?x7.js"></script>
+        <link rel="stylesheet" href="css/style.css?x7.js">
+        <script type="text/javascript" src="js/x7.js?x76k.44"></script>
+        <%- head %>
+    </head> 
+<style>.desginliste img:hover,.desginlist img:hover{border:2px solid #00BCD4!important}#users .fitimg.fl.imgbaqer{position:relative!important}.desginlist img{border:2px solid #000;width:100px;height:100px;margin-left:5px}.desginliste img{border:2px solid #000;width:100%;height:79px;margin-left:5px}.desginlist{overflow-x:auto;overflow-y:hidden;display:flex;margin:auto;margin-top:-14px;margin-bottom:0!important}::-webkit-scrollbar{width:5px;height:5px}::-webkit-scrollbar-corner{background:transparent}::-webkit-scrollbar-thumb{background:#050505;border:71px none #fff;border-radius:31px;background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,.2) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.2) 50%,rgba(255,255,255,.2) 75%,transparent 75%,transparent)!important}::-webkit-scrollbar-track{background:#f8f9fa;border:65px none #fff;border-radius:34px}.desginliste{overflow-x:auto;overflow-y:hidden;display:flex;margin:-2px -36px;padding:2px 0 0 32px;width:112%;height:90px}@keyframes show_message_box{0%{transform:translateX(-100%)}40%{transform:translateX(10%)}80%,to{transform:translateX(0.8333333333rem)}}@keyframes hide_message_box{0%{transform:translateX(0.8333333333rem)}40%{transform:translateX(10%)}80%,to{opacity:0;pointer-events:none;transform:translateX(-100%)}}.message-box{animation:show_message_box 2s ease forwards;left:.8333333333rem;position:absolute;top:.8333333333rem;z-index:10000000}.message-box .box.green{border-color:#2ecc71}.message-box .box{height:33px;align-items:center;background:#fff;border-left:5px solid #2ecc71;border-radius:.4166666667rem;box-shadow:.0416666667rem .2916666667rem .5833333333rem -.2083333333rem rgba(0,0,0,0.15);display:flex;justify-content:space-between;padding:.4rem .6rem .4rem .4rem;width:auto}.message-box .box .content,.message-box .content .icon{align-items:center;display:flex}.message-box .box.green .content .icon{background:#2ecc71}.message-box .content .icon{padding:12px!important;background:#2ecc71;border-radius:50%;color:#fff;font-size:1.0416666667rem;height:1rem;justify-content:center;line-height:1rem;text-align:center;width:1rem}.message-box .content .icon .fa{font-size:.6rem;margin-top:.1rem}.message-box .content .details{direction:rtl;margin-left:.3rem;margin-top:13px}.message-box.hiden{animation:hide_message_box 2s ease forwards}.box.orange .icon{background:#df7a22}.box.red{border-color:#d44646}.box.red .icon{background:#d44646;color:#fff}.box.red .icon:before{content:"";position:absolute;top:4px;right:0;left:23px;width:2px;height:23px;background:#c70e0e;transform:rotate(45deg)}.box.orange{border-color:#df7a22}.emoi{width:20px;height:20px;margin:3px;box-shadow:2px 1px 3px #8c8c8c;cursor:pointer}img.smile{max-width:240px;max-height:20px}.str{display:inline-block}.fa-volume-off:before{content:"\f026"}#StoryProgress{width:100%;background-color:#ddd}#BarStory{width:0;height:3px;background-color:#6495ed;margin-bottom:15px}.story{background-color:#264969;color:#fff;margin:4px;padding:8px;width:45%;border:1px solid #000!important;text-align:center}img{user-select:none!important;-webkit-user-drag:none}.fa-gamepad:before{content:"\f11b"}.fa-history:before{content:"\f1da"}a{text-decoration:none!important}.fa::before{font-size:92%}*{font-family:serif;font-weight:700;text-shadow:none!important;font-size:15.2px!important;line-height:1.4!important;font-weight:700!important;text-shadow:none!important}.u-msg{line-height:1.5!important}.ae{border:1px solid #000!important;border-radius:2px!important;float:left;text-align:center;width:20%;max-width:80px;padding:4px 0;margin:1px;margin-bottom:2px}.label,.btn{border-radius:1px!important}button.btn{padding:5px!important}.bgf{backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}.is_speaking{-webkit-animation:ripple .7s linear infinite;animation:ripple .7s linear infinite}@-webkit-keyframes ripple{0%{box-shadow:0 0 0 0 transparent,0 0 0 1px rgba(0,200,45,0.3),0 0 0 2px rgba(0,200,45,0.3),0 0 0 3px rgba(0,200,45,0.3)}to{box-shadow:0 0 0 1px rgba(0,200,45,0.3),0 0 0 4px rgba(0,200,45,0.3),0 0 0 5px rgba(0,200,45,0.3),0 0 0 6px transparent}}@keyframes ripple{0%{box-shadow:0 0 0 0 transparent,0 0 0 1px rgba(0,200,45,0.3),0 0 0 2px rgba(0,200,45,0.3),0 0 0 3px rgba(0,200,45,0.3)}to{box-shadow:0 0 0 1px rgba(0,200,45,0.3),0 0 0 4px rgba(0,200,45,0.3),0 0 0 5px rgba(0,200,45,0.3),0 0 0 6px transparent}}.msg{background-color:#f0f0f5;border:1px solid grey;margin-top:-1px;padding:2px;margin-right:3px;margin-left:3px}.bord{border-inline:4px solid #1e90ff!important}.nobreak{display:inline;white-space:nowrap;word-wrap:nowrap;word-break:keep-all}.tbox{overflow:scroll;border-radius:2px;border:1px solid #d3d3d3;padding:6px;max-height:32px;min-height:32px;height:32px;font-weight:700;overflow:hidden;resize:none}.emoii{width:22px;max-width:22px;height:22px;margin:0;padding:5px}.hid{display:none}.noflow{overflow:hidden}div{line-height:20px}.popover {height: 250px;overflow-y: overlay;white-space: pre-wrap;max-width: auto !important;z-index: 900000000;margin-left: 38px;}.item3{font-size:16px!important;color:#000}.item5{color:gray}.grid-container{background:#f0f8ff;text-align:right;margin-left:50px;padding:8px;border-left:6px solid #6495ed}.loginItms{position:absolute;display:none;border:2px solid #af020b;background-color:#f93634;border-radius:25px 0 0 25px;background-image:url(imgs/banner.png);background-repeat:no-repeat;background-size:contain;right:0;top:30px;width:250px}.loginImg{float:right;width:36px;height:36px;border:1px solid #ed5555;margin:1px;background-size:cover;background-repeat:no-repeat;border-radius:50%}.loginLogo{float:right;margin:1px;margin-top:-20px}.loginIco{float:right;margin:0 1px 1px;max-height:18px;background-color:#fff;padding:1px;border-radius:2px}.loginFlog{float:left;margin:2px 0 5px 5px;max-height:15px}.loginUserName{font-size:15px!important;float:right;font-family:arial;font-weight:9000;max-width:170px;min-width:100px;text-align:right;text-shadow:-1px 1px 2px #fff;color:#842c2a;white-space:nowrap;overflow:hidden!important;text-overflow:ellipsis}.broadcasters > div > .prods{float:right;width:40px;height:40px;right:5px;top:8px;color:#db7093;border:2px solid;margin:0 1px;text-align:center;border-radius:50%;background-color:#fff}.broadcasters > div > .prods > .fa{font-size:20px!important;text-align:center;margin-top:5px;color:#a9a9a9}.broadcasters > div > .prod > .fa-microphone{font-size:16px!important;text-align:center;margin-top:2px}.broadcasters > div > .prods > .ismute{position:absolute;height:3px;background:gray;display:none;width:38px;margin-left:-2px;margin-top:17px;transform:rotate(135deg)}.broadcasters > div > .prod > .ismute{position:absolute;height:3px;background:gray;display:none;width:50px;margin-left:-3px;margin-top:22px;transform:rotate(135deg)}.u-topic.dots{white-space:nowrap;max-width:130%}.fr{float:right}.fl{float:left}.d2{padding-bottom:2px}.gifts_picker__contianer{border:1px solid;width:100%;display:inline-block;height:90px;overflow:auto}.fitimg{background-size:contain;background-repeat:no-repeat;background-position:50% 50%}.nosel,.u-ico,.u-pic,.tago{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default}.ui-dialog-contain{width:92.5%;max-width:500px;margin:0 auto 15px;padding:0;position:relative;top:2px}.center{margin:0 auto}.dots{display:inline-block;white-space:nowrap;overflow:hidden!important;text-overflow:ellipsis;max-width:100%}img.private_message__check{display:block;width:15px;position:relative;left:60px;top:35px;margin:-10px}div#d2 img.private_message__check{display:none}div#d2bc img.private_message__check{display:none}p#isfil{text-align:center;margin:-15px auto;width:50%;border:1px solid #000;border-radius:5px;line-height:1.6;display:block}*{font-family:serif;font-weight:700;text-shadow:none!important;font-size:15px!important}div#blockuser .hand.nosel{width:305px!important;padding:20px 0 0;height:125px;background-color:#fff!important;text-align:center!important;border:3px solid;position:relative;right:2px;top:8px;box-shadow:inset 0 1px 20px;border-top:3px solid!important}div#userblock img.fl.ustat{display:none!important}.notification .break.fl{padding:0 .2em;min-height:32px!important;height:auto;border:3px solid #fefffc;padding:28px;border-radius:0 15px 15px 15px;box-shadow:7px 7px 10px #000;background-color:#818181;background-image:linear-gradient(305deg,#818181 0%,#898989 74%)!important;color:#ffff}.label{display:inline;padding:.2em .6em .3em;font-size:75%;font-weight:700;line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25em}.bg-primary,.btn-primary,.bg-primary,.bg-primary:hover,.btn-primary:hover,.btn-primary:focus{background-color:#<%=colors.btcolor %>!important;background-image:none}.bg{background-color:#<%=colors.bgcolor %>!important}.light{background-color:#<%=colors.hicolor %>!important}.pophead{background-color:slategrey}.bg-primary,.btn-primary{background-color:#000}.broadcasters{position:absolute;top:0;width:100%;background-color:#<%=colors.btcolor %>;left:0;box-shadow:inset 0 1px 10px #fff;display:flex;align-items:center;justify-content:center}.broadcasters > div{max-width:260px}.broadcasters > div > .prods{float:right;width:40px;height:40px;right:5px;top:8px;color:#d87093;border:2px solid;margin:0 1px;text-align:center;border-radius:50%;background-color:#fff}.broadcasters > div > .prods > .fa{font-size:28px!important;text-align:center;margin-top:5px;color:#a9a9a9}.chat_pane__user_item__name,.chat_pane__user_item__status{max-height:30px;font-size:.55rem;font-weight:700;padding:0 .2em 0 2.9em;margin:.1rem 0 0}.chat_pane__user_item{position:relative;background:#fff;border:1px solid #e6e6fa;padding:0 .05rem;cursor:pointer;margin:0 .05rem -1px}.chat_pane__user_item__avatar img{border-width:1px!important;margin-right:5px;width:36px;height:36px;margin-left:1px;background-size:cover;border-radius:3px!important;padding:0;margin-top:-1px!important}.chat_pane__user_item__avatar{float:left;margin:.07rem 0 0}.username__icon{margin:1px 2px 0 0}.username__wrapper{padding:0 .6em;border-radius:.125rem;font-size:.625rem}.chat_pane__user_item__status{font-size:.583rem;color:#888;width:100%;margin-top:.15rem}.chat_pane__user_item__flag{position:absolute;top:.05em;right:.05em;height:14px;margin-top:1px}.broadcasters > div > .prod{float:right;width:50px;height:52px;color:#<%=colors.btcolor %>;border:2px solid #dcdcdc;margin:0 1px;text-align:center;background-color:#fff}i#seobaqershowmsg{display:block;margin-top:-15px}.broadcasters > div > .prod > .fa-microphone{font-size:28px!important;text-align:center;margin-top:2px}.broadcasters > div > .prod > hr{margin:0;border-top-color:#<%=colors.btcolor %>}.broadcasters > div > .prod > .evant > i{position:relative;font-size:16px!important;text-align:center;color:#<%=colors.btcolor %>;top:36px;height:18px;border-radius:50%;background-color:#ffffffc7;border:1px solid #d9534f70}.broadcasters > div > .prods > .ismute{position:absolute;height:3px;background:gray;display:none;width:38px;margin-left:-2px;margin-top:17px;transform:rotate(135deg)}.broadcasters > div > .prod > .ismute{position:absolute;height:3px;background:gray;display:none;width:50px;margin-left:-3px;margin-top:22px;transform:rotate(135deg)}.u-topic.dots{white-space:nowrap;max-width:130%}.tbox{overflow:scroll;border-radius:2px;border:1px solid #d3d3d3;padding:6px;max-height:32px;min-height:32px;height:32px;font-weight:700;overflow:hidden;resize:none}.modal-header{padding:5px;direction:rtl}.badge{padding:0 3px}.vulomeup{position:absolute;top:91px;right:3px;height:35px;width:30px}.callstat{position:absolute;right:4px;border:none;top:60px}button.btn.fa.fa-microphone-slash{position:absolute;top:91px;right:35px;height:35px;width:30px}.style{background:#5cb85c;color:#fff;border:1px solid}#ping{font-size:24px}.fast{color:green}.medium{color:#fee87e}.slow{color:red}#color-picker-icon{position:fixed;top:80%;right:20px;transform:translateY(-50%);width:60px;height:60px;z-index:10000;cursor:pointer;display:flex;justify-content:center;align-items:center;transition:all 0.4s ease-in-out;}#color-picker-icon img{width:100%;height:100%;border-radius:50%;box-shadow:0 6px 12px rgba(0,0,0,0.3);transition:transform 0.4s ease-in-out;}#color-picker-icon:hover img{transform:scale(1.1);}#color-picker-panel{position:fixed;top:50%;right:50%;transform:translate(50%,-50%);background:linear-gradient(135deg,#ffffff,#f3f4f6);border-radius:16px;box-shadow:0 8px 20px rgba(0,0,0,0.2);padding:20px;display:none;z-index:9999;width:300px;font-family:'Arial',sans-serif;color:#ccc;animation:fadeIn 0.5s ease-in-out;}#color-picker-panel h4{margin:0;font-size:16px;font-weight:bold;text-align:center;margin-bottom:10px;color:#aaa;}#color-picker-panel input[type="color"]{width:100%;height:40px;border:none;cursor:pointer;margin-bottom:20px;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,0.1);background-color:#333;color:#fff;}#color-picker-panel button{width:100%;padding:12px;background:linear-gradient(135deg,#6a11cb,#2575fc);color:#fff;border:none;border-radius:8px;font-size:16px;font-weight:bold;cursor:pointer;box-shadow:0 6px 12px rgba(0,0,0,0.2);transition:all 0.3s ease-in-out;}#color-picker-panel button:hover{background:linear-gradient(135deg,#2575fc,#6a11cb);transform:scale(1.05);}#color-picker-panel button:active{transform:scale(0.95);}#color-picker-panel .custom-color{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px;}#color-picker-panel .custom-color div{width:40px;height:40px;border-radius:4px;cursor:pointer;border:2px solid #fff;box-shadow:0 2px 5px rgba(0,0,0,0.2);}#color-picker-panel .custom-color div:hover{border-color:#aaa;}#designer-rights{margin-top:20px;font-size:14px;text-align:center;color:#777;}#designer-rights a{color:#2575fc;text-decoration:none;font-weight:bold;}#designer-rights a:hover{text-decoration:underline;}@keyframes fadeIn{from{opacity:0;transform:translate(50%,-55%);}to{opacity:1;transform:translate(50%,-50%);}}           #more .fa-youtube:before{color:red;font-weight:200;}#more .fa-send:before{left:10px!important;position:absolute;}#more .fa-bell-slash:before{left:10px!important;position:absolute;}#more .fa-bell:before{left:10px!important;position:absolute;}#more .fa::before{position:static!important;}#more .fa-send:before{float:inline-start;}#more .fa-bell-slash:before,#more .fa-bell:before{float:inline-start;}#more .fa-youtube:before{color:red;font-weight:200;}#more .fa-send:before{left:10px!important;position:absolute;}#more .fa-bell-slash:before{left:10px!important;position:absolute;}#more .fa-bell:before{left:10px!important;position:absolute;}.ppop.light.border.break.ppop-color-container{margin-left:-45px;}.famobii{position:fixed;width:100%;height:100%;background:rgba(0,0,0,.2);z-index:9999;}.famobii>iframe{display:block;background:#000;border:none;height:90vh;width:100vw;}.SubG{position:fixed;width:100%;height:100%;background:rgba(0,0,0,.2);z-index:9999;}.SubG>iframe{display:block;background:#000;border:none;height:90vh;width:100vw;}.pallboll{position:fixed;width:100%;height:100%;background:rgba(0,0,0,.2);z-index:9999;}.pallboll>iframe{display:block;background:#000;border:none;height:97vh;width:100vw;}.c-flex{display:flex;flex-direction:column;}.d-flex{display:flex;}.flex-grow-1{flex-grow:1!important;}.flex-fill{flex:1 1 auto!important;}@keyframes colorChange{0%{background-color:red;}4%{background-color:orange;}8%{background-color:yellow;}12%{background-color:green;}16%{background-color:blue;}20%{background-color:indigo;}24%{background-color:violet;}28%{background-color:pink;}32%{background-color:brown;}36%{background-color:cyan;}40%{background-color:magenta;}44%{background-color:lime;}48%{background-color:maroon;}52%{background-color:navy;}56%{background-color:olive;}60%{background-color:teal;}64%{background-color:purple;}68%{background-color:gold;}72%{background-color:silver;}76%{background-color:coral;}80%{background-color:salmon;}84%{background-color:khaki;}88%{background-color:lavender;}92%{background-color:beige;}96%{background-color:turquoise;}100%{background-color:red;}}.label.tc.border.btn.fl.more{animation:colorChange 20s infinite;}</style>
+<body class="bg" onload="" style="background-color:#40404f;height:100%;max-height:100%;min-height:100%; margin: 0px; padding: 0px; overflow: hidden; ">
+    <audio controls autoplay id="playios" style="position: fixed;width: 0px;display:none;height: 0px;">
+        <source src="sun.mp3" type="audio/mpeg">
+    </audio>
+    <div id="toast_container">
+        <div id="message-box" class="message-box hide">
+            <div class="box">
+                <div class="content">
+                    <div class="icon"><i class="fa fa-wifi"></i></div>
+                    <div class="details"><span>تم الإتصال</span>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="message-box1" class="message-box hide">
+            <div class="box orange">
+                <div class="content">
+                    <div class="icon"><i class="fa fa-wifi"></i></div>
+                    <div class="details"><span>يتم الإتصال بالسيرفر...</span>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="message-box2" class="message-box hide">
+            <div class="box red">
+                <div class="content">
+                    <div class="icon"><i class="fa fa-wifi"></i></div>
+                    <div class="details"><span>فشل الإتصال بالسيرفر...</span>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="width:100%; height:100%;max-height:100%;max-width:394px;padding:0px;" class="center-block bg dad">
+        <div id="tlogins" class="border light fr break c-flex" style="z-index:1000;margin-left:-4px;height:100%;width:100%;max-width:390px;min-height:100%;">
+            <a href="/" class="label bg d-flex fl" style="width:100%;padding:6px;border-radius:0px;text-align: left;"><img src="<%=logo%>" alt="logo" class="fl" style="margin-right: 2px; width:24px;height: 24px;"><span class="flex-grow-1 dots">
+                    <%= istite %>
+                </span><button id="clear-cache" class="btn fr btn-success" style="margin-top:-2px;width: 87px;margin-right: 1px;font-size: 12.5px !important;">تنظيف الكاش</button><span class="btn fr btn-success fa fa-refresh" style="margin:0px;margin-top:-2px;width: 39px;"></span></a>
+            <div id="bnr" style="width: 100%;">
+                <% if(ifbanner){ %>
+                <img src='<%=banner%>' class="isbnr" style="width: 100%;height: 190px;">
+                <% } %>
+            </div>
+            <ul class="nav nav-tabs react-tabs__tab-list fl" style="width: 100%;" id="tabs" role="tablist">
+                <li class="nav-item react-tabs__tab react-tabs__tab--selected" id="react-tabs-1">
+                    <a class="nav-link active" data-toggle="tab" href="#guest" role="tab" aria-controls="guest" aria-selected="true"><span class="fa fa-user"></span>دخول الزوار</a>
+                </li>
+                <li class="nav-item react-tabs__tab" id="react-tabs-2">
+                    <a class="nav-link" data-toggle="tab" href="#member" role="tab" aria-controls="member" aria-selected="false"><span class="fa fa-user"></span>دخول الأعضاء</a>
+                </li>
+                <li class="nav-item react-tabs__tab" id="react-tabs-3">
+                    <a class="nav-link" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false"><span class="fa fa-user"></span>تسجيل عضوية</a>
+                </li>
+            </ul>
+            <div style="width:100%;height: 74px;" class="tab-content fl">
+                <div id="guest" style="padding:4px;width:100%;" class="tab-pane in active">
+                    <input style="width: 206px;margin-top:33px;padding:5px;border-radius: 2px;height:33px;" autocomplete="off" type="search" class="border " id="u1" placeholder="أكتب الاسم المستعار">
+                    <button style="margin-top:1px;" onclick="login(1);" aria-label="enter" class="btn btn-primary">دخول</button>
+                </div>
+                <div id="member" style="padding:4px;width:100%;" class="tab-pane hid">
+                    <input style="width: 206px;padding:5px;border-radius: 2px;height:33px; margin: 1px;" id="u2" class="border " placeholder="اكتب اسم العضو">
+                    <input style="width: 206px;padding:5px;border-radius: 2px;height:33px;margin: 1px;" id="pass1" class="border " type="password" placeholder="اكتب كلمه المرور">
+                    <button onclick="login(2);" class="btn btn-primary">دخول</button>
+                    <span onclick="$(this).toggleClass('bg-info');$('#stealth').prop('checked',$(this).hasClass('bg-info'));" style="color: black;padding:4px;margin:2px;border-radius:4px;" class="btn fr fa fa-eye"></span>
+                    <input style="display: none;" id="stealth" type="checkbox" value="">
+                </div>
+                <div id="register" style="padding:4px;width:100%;" class="tab-pane hid">
+                    <input style="width: 206px;padding:5px;border-radius: 2px;height:33px; margin: 1px;" id="u3" class="border " placeholder="اكتب اسم العضو">
+                    <input style="width: 206px;padding:5px;border-radius: 2px;height:33px;margin: 1px;" id="pass2" class="border " type="password" placeholder="اكتب كلمه المرور">
+                    <button onclick="login(3);" class="btn btn-primary">دخول</button>
+                </div>
+                <h6 class="hid">
+                    <%= istite %>
+                </h6>
+                <a class="hid" href="/">
+                    <%= keywords %>
+                </a>
+            </div>
+            <div title="المتواجدين الآن" class="bg mini fl" style="width:100%;border-radius:0px;padding: 0px;height: 25px;">
+                <label id="loginstat" class="fl label loginstat bg-info" style="border-radius: 1px;margin: 0px;height: 25px;min-width: 120px;">يتم الإتصال.</label>
+                <span id="s1" class="s1 fr fa fa-user label badgex bg-success" style="border-radius: 0px;min-width: 38px;height: 25px;">0</span>
+            </div>
+            <div class="lonline light break" style="width: 100%; outline: lightgray solid 1px;"></div>
+            <%- namehost %>
+        </div>
+        <div class="broadcasters"></div>
+        <div class="pallboll" style="display: none;">
+            <div onclick="ShowPool(1)" style="position: relative; color: #fff; width: 100%; text-align: center; background: red;"><i style="font-size: 25px !important;" class="fa fa-close"></i></div>
+            <iframe src="" scrolling="no" frameborder="no" allowfullscreen></iframe>
+        </div>
+        <div class="SubG" style="display: none;">
+            <div onclick="SubDame(1)" style="position: relative; color: #fff; width: 100%; text-align: center; background: red;"><i style="font-size: 25px !important;" class="fa fa-close"></i></div>
+            <iframe src scrolling="no" frameborder="no" allowfullscreen></iframe>
+        </div>
+        <div class="famobii" style="display: none;">
+            <div onclick="famobi(1)" style="position: relative; color: #fff; width: 100%; text-align: center; background: red;"><i style="font-size: 25px !important;" class="fa fa-close"></i></div>
+            <iframe src scrolling="no" frameborder="no" allowfullscreen></iframe>
+        </div>
+        <div id="room" style="height: 100%; width: 100%;display: none;" class="break fr">
+            <div id="d2" onclick="$('.dpnl').hide();" class="d2 light filh break"></div>
+            <div class="isreply" class="fl hid" style="background: aliceblue;"></div>
+            <div onclick="$('.dpnl').hide();" class="tablebox footer fl light" style="width: 100%; height: 42px; padding: 4px; flex: 0 0 auto;">
+                <button onclick="SEND_EVENT_SEOHOST('rleave',{});" style=" margin-left:-2px;margin-top:2px;border-radius: 2px;" class="fa fa-sign-out fl btn btn-primary">&nbsp;</button>
+				<a class="fl clear fa fa-trash " onclick="DeletAllMassgrtInPublic();" style="width: 26px;height: 30px!important;font-size: 26px!important;padding: 0px 7px;margin-top: -1px;color: #007fff !important;"></a>
+                <img id="smile" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" class="fl nosel emobox" style="padding: 5px; width: 34px;">
+                <textarea id="tbox" onclick="$('button.ae.label.bg-primary,#storyseo,#tnbehseo,label.ae.label.bg-primary.fa.fa-area-chart,.btn-success').removeClass('active');$('.pop').pop('hide');setTimeout(function(){$('#d2').scrollTop($('#d2')[0].scrollHeight);},600);" placeholder="اكتب رسالتك هنا" class="fl tbox filw" oninput="updateCharacterCount()" style="direction: rtl; text-align: left; margin-top: 2px; background-color: rgb(170, 170, 175);"></textarea>
+                <button onclick="TSEND_EVENT_SEOHOST();" style="margin-left: 2px; margin-top: 2px;" class="fa fa-send fl btn btn-primary">آرسال</button>
+            </div>
+            <div id="d0" onclick=" " class="nosel fl bg" style="padding-left: 1px; margin-top: 3px; width: 100%;">
+                <button title="المتواجدين" href="#" onclick="$('button.ae.label.bg-primary,#storyseo,#tnbehseo,label.ae.label.bg-primary.fa.fa-area-chart,.btn-success').removeClass('active');$('.pnhead').text($(this).attr('title'));setTimeout(function(){$('#users').scrollTop(0);},100);$('.dpnl').show();$('#usearch').val('');" data-toggle="tab" data-target="#users" style="width: 18%;" class="ae fa label bg-primary fa-user">
+                    <span class="busers" style="padding:1px 4px;"></span>
+                </button>
+                <button title="المحادثات الخاصه" href="#" onclick="$('button.ae.label.bg-primary,#storyseo,#tnbehseo,label.ae.label.bg-primary.fa.fa-area-chart,.btn-success').removeClass('active');$('.pnhead').text($(this).attr('title'));hl($(this),'primary');setTimeout(function(){$('#users').scrollTop(0);},100);$('.dpnl').show();" data-toggle="tab" data-target="#chats" class="ae fa chats label bg-primary fa-comment">
+                    <span class="pmc" style="padding:1px 4px;"></span>خاص
+                </button>
+                <button id="rroomm" title='غرف الدردشه' href="#" onclick="$('button.ae.label.bg-primary,#storyseo,#tnbehseo,label.ae.label.bg-primary.fa.fa-area-chart,.btn-success').removeClass('active');$('#dpnl').find('.pnhead').text($(this).attr('title'));$('#dpnl').show();" data-toggle="tab" data-target="#rooms" class="ae fa label bg-primary fa-users" style="width: 19%;"><span style="padding:1px 4px;"></span>الغرف</button>
+                <button title="الحائط" href="#" onclick="$('button.ae.label.bg-primary,#storyseo,#tnbehseo,label.ae.label.bg-primary.fa.fa-area-chart,.btn-success').removeClass('active');$('.pnhead').text($(this).attr('title'));$('.dpnl').show();setTimeout(function(){$('#d2bc').scrollTop(0);},100);hl($(this),'primary');$(this).find('.bwall').text('');bcc=0;" data-toggle="tab" data-target="#wall" class="ae fa label bg-primary fa-commenting-o">
+                    <span class="bwall" style="padding:1px 4px;"></span>الحائط</button>
+                <button title="الإعدادات" href="#" onclick="$('.pnhead').text($(this).attr('title'));$('.dpnl').show();$('button.ae.label.bg-primary,#storyseo,#tnbehseo,label.ae.label.bg-primary.fa.fa-area-chart,.btn-success').removeClass('active');" data-toggle="tab" data-target="#settings" class="ae label bg-primary fa fa-gear">
+                    <span style="padding:1px 4px;"></span>الضبط</button>
+            </div>
+        </div>
+        <div id="dpnl" class="dpnl bg tab-content" style="display: none; border: 1px solid; max-width: 315px; width: 315px; padding-top: 20px; padding-bottom: 16px; position: absolute; top: 0px; right: 0px; height: 607px;">
+            <button onclick="$(this).parent().hide();" data-toggle="tab" data-target="#settings" class="label bg-danger border nosel fa fa-close fr" style="margin-top: -18px; margin-bottom: 0px; margin-right: 2px; border: 1px solid black; border-radius: 6px; padding: 6px 8px;">
+                &nbsp;
+            </button>
+            <label class="fl nosel label pnhead" style="margin: 3px; margin-top: -18px; padding-left: 10px; padding-right: 10px;">المتواجدين</label>
+            <div id="users" style="height: 100%; width: 100%;" class="light break tab-pane">
+                <textarea type="search" id="usearch" placeholder=".. البحث" class="tbox bg border" style="width: 100%; padding-left: 5px; display: block;"></textarea>
+                <label style="margin: 0px !important; width: 100%; margin: 0px; border: none; padding: 4px; border-radius: 0px; display: none;" class="nosel ninr fl uzr label bg-primary">المتواجدين في الدردشه</label>
+            </div>
+            <div id="mic" style="height: 100%; width: 100%;" class="break light tab-pane border"></div>
+            <div id="chats" style="height: 100%; width: 100%;" class="break light tab-pane border"><button class="btn btn-danger fa fa-times pull-right" style="width: 100%;" onclick="if(!confirm(`هل أنت متأكد من حذف كل الخاص؟`)){return}else{$('#seo').empty();$('.removechat').remove()}">تفريغ الخاص للتسريع</button>
+                <div id="seo"></div>
+            </div>
+            <div id="wall" style="height: 100%; width: 100%;" class="break tab-pane border">
+                <div class="youtubeSearch" style="position: relative; float: right; width: 100%; top: 0;">
+                    <div class="youtubeLoad" style="display: none; text-align: center; position: absolute; right: 0; left: 0; background-color: #ffffff80;">
+                        <img style="margin-top: -9px; width: 60px;" id="icon" />
+                    </div>
+                    <div style="display: flex; background-color: white; padding: 2px 0; border-bottom: 1px solid; height: 40px;">
+                        <i onclick=" SEND_EVENT_SEOHOST('youtube', {'search':$('.youtubeVal').val()});$('.youtubeLoad').show()" style="float: left; font-size: 24px !important; color: #6d6b6b; font-weight: 100 !important; margin: 0px;" class="fa fa-search" aria-hidden="true"></i>
+                        <input style="text-align: center; float: right;" type="text" class="form-control youtubeVal" placeholder="البحث في يوتيوب" />
+                        <i style="float: right;font-size: 30px !important;color: red;font-weight: 100 !important;margin-top: -4px;margin-right: -5px;padding: 2px;" class="fa fa-youtube" aria-hidden="true"></i>
+                    </div>
+                    <div style="display: none;" class="vieYoutube">
+                        <img style="min-height: 60px; width: 100%; float: left;" alt="" />
+                        <span style="margin-top: -56px; float: left; background-color: #ffffffa1; color: red; padding: 2px 0; text-align: center; width: 100%;" class="dots youtubeTitl"></span>
+                        <button style="margin: 0 2px; width: 48%; margin-top: -28px; text-align: center;" class="youtubeSend fa fa-send fr btn btn-primary">ارسال الى الحائط</button>
+                        <button onclick=" $('.vieYoutube').hide();" style="margin: 0 2px; width: 48%; margin-top: -28px; text-align: center;" class="youtubeCloos fa fl btn btn-primary">الغاء</button>
+                    </div>
+                </div>
+                <div id="d2bc" class="d2 light fl d2bc filh break" style="width: 100%;"></div>
+                <div class="tablebox fl light" style="width: 100%; padding: 4px;">
+                    <button onclick=" sendbc(true);" style="margin-left: 2px;margin-right: 3px;margin-top: 2px;padding: 8px;border-radius: 0 !important;" class="fr fa fa-share-alt sndfilebc fl btn btn-primary"></button>
+                    <img tabindex="0" role="button" data-toggle="popover" data-trigger="focus" class="fl emobc" style="padding: 5px; width: 34px;" id="smile2" />
+                    <textarea placeholder="اكتب رسالتك هنا" autocomplete="off" type="text" class="fl tbox corner tboxbc filw" style="width: 49px; direction: rtl; text-align: left;"></textarea>
+                    <button onclick=" sendbc();" style="margin-left: 2px;height: 33px;border-radius: 0 !important;" class="fa fa-send sndbc fl btn btn-primary">
+                        إرسال
+                    </button>
+                </div>
+            </div>
+            <div id="rooms" style="height: 100%; width: 100%;" class="light border break tab-pane">
+                <div style="width: 100%; margin: 0px; border: none; border-radius: 0px;" class="nosel bg-primary fl bgg">
+                    <button onclick="mkr();" class="border btn label bg-success fl fa fa-plus" style="margin: 1px;">غرفه
+                        جديدة</button>
+                </div>
+            </div>
+            <div id="more" style="background: #e2e2e2;height: 100%;width: 100%;border: 1px solid;" class="light break tab-pane active">
+                <label class="line-length-xl label-primary" style="text-align: center;margin: 5px 0px 2px 0px;font-size: 15px!important;width: 100%;background: #4b6d91;padding: 2px;color: #fff;border-radius: 16px 16px 0px 0px !important;margin-top: 12px;height: 24px;">الاضافات الرسمية</label>
+                <label id="mute" onclick=" mutednot()" style="color: white; margin: 4px 4px 4px 2px; padding: 8px; width: 99%; border: 0px; background-color: rgb(233, 32, 70) !important; display: none;" class="label tc border btn label-info fl fa fa-bell-slash"> كتم صوت الاشعارات</label>
+                <label id="mute1" onclick=" mutednot1()" style="color: white; margin: 4px 4px 4px 2px; padding: 8px; width: 99%; border: 0px; display: block; background-color: rgb(92, 184, 92) !important;" class="label tc border btn label-info fl fa fa-bell" data-cf-modified-994af41ddb1622582d05d839-=""> تشغيل صوت الاشعارات</label>
+                <label id="tnbehseo" title="الإشعارات" onclick="$('button.ae.label.bg-primary,#storyseo,#tnbehseo,label.ae.label.bg-primary.fa.fa-area-chart,.btn-success').removeClass('active'); $('.pnhead').text($(this).attr('title'));$('.dpnl').show();" style="background-color: #b600ff; color: #fff; margin: 4px; padding: 8px; width: 98%;" data-toggle="tab" data-target="#notf" class="label tc border btn fl" aria-expanded="true"><span class="fl fa fa-bell"></span>الإشعارات</label>
+                <label id="storyseo" title="القصص" onclick="$('button.ae.label.bg-primary,#storyseo,#tnbehseo,label.ae.label.bg-primary.fa.fa-area-chart,.btn-success').removeClass('active'); $('.pnhead').text($(this).attr('title'));$('.dpnl').show();" style="background-color: #3a2b46; color: #fff; margin: 4px; padding: 8px; width: 98%;" data-toggle="tab" data-target="#storyes" class="label tc border btn fl" aria-expanded="true"><span class="fl fa fa-history"></span>القصص</label>
+                <label aria-expanded="true" class="ae label bg-primary fa fa-area-chart" data-target="#top10" data-toggle="tab" onclick="$('button.ae.label.bg-primary,#storyseo,#tnbehseo,label.ae.label.bg-primary.fa.fa-area-chart,.btn-success').removeClass('active'); $('.pnhead').text($(this).attr('title'));$('.dpnl').show();getop()" href="#" title="مبدع الحائط" style="max-width: 99%;width: 99%;">مبدع الحائط</label>
+                <label title="مبدع الحائط" style="display: block;text-align: center;margin: 5px 0px 2px 0px;font-size: 15px!important;min-width: 100%;background: #4b6d91;padding: 3px;color: #fff;border-radius: 0px 0px 16px 16px !important;margin-top: 12px;height: 27px;" id="tvis" title="" href="#" onclick="$('button.ae.label.bg-primary,#storyseo,#tnbehseo,ae.fa.label.fa-microphone.label-primary,.btn-success').removeClass('active');ShowTV();$('.pnhead').text($(this).attr('title'));hl($(this),'primary');setTimeout(function(){$('#mic').scrollTop(0);},100);$('.dpnl').show();" data-toggle="tab" data-target="#mic" class="ae fa label fa-microphone label-primary" aria-expanded="true">.الإذاعة</label>
+                <label class="line-length-xl label-primary" style="text-align: center;margin: 5px 0px 2px 0px;font-size: 15px!important;width: 100%;background: #4b6d91;padding: 2px;color: #fff;border-radius: 16px 16px 0px 0px !important;margin-top: 12px;height: 24px;">الالعاب</label>
+                <label class="line-length-xl" style="padding: 0px;border-radius: 25px;text-align: center;margin: 8px 0px 2px 0;font-size: 12px!important;width: 100%;background: #f4f7fb;">لعبة البلياردو</label>
+                <label onclick="ShowPool()" style="text-align: center;color: #fff;background: #b93b3b;border: 0;border-radius: 0px!important;padding: 9px!important;margin: -1px 0px 0 3px!important;width: 98.7%!important;">
+                    <div id="toggles" onclick="ShowPool()" class="">Pall Boll</div>
+                </label><br>
+                <label class="line-length-xl" style="padding: 0px;border-radius: 25px;text-align: center;margin: 8px 0px 2px 0;font-size: 12px!important;width: 100%;background: #f4f7fb;">لعبة سابوي</label>
+                <label onclick="SubDame()" style="text-align: center;color: #fff;background: #b93b3b;border: 0;border-radius: 0px!important;padding: 9px!important;margin: -1px 0px 0 3px!important;width: 98.7%!important;">
+                    <div id="toggles" onclick="SubDame()" class>SubWay </div>
+                </label><br>
+                <label class="line-length-xl" style="padding: 0px;border-radius: 25px;text-align: center;margin: 8px 0px 2px 0;font-size: 12px!important;width: 100%;background: #f4f7fb;">لعبة سوليتير</label>
+                <label onclick="famobi()" style="text-align: center;color: #fff;background: #b93b3b;border: 0;border-radius: 0px!important;padding: 9px!important;margin: -1px 0px 0 3px!important;width: 98.7%!important;">
+                    <div id="toggles" onclick="famobi()" class>سوليتير</div>
+                </label><br>
+                <label class="line-length-xl label-primary" style="text-align: center;margin: 5px 0px 2px 0px;font-size: 15px!important;width: 100%;background: #4b6d91;padding: 2px;color: #fff;border-radius: 0px 0px 16px 16px !important;margin-top: 12px;height: 24px;"></label>
+            </div>
+            <div id="chats" style="height: 100%; width: 100%;" class="light break border tab-pane"></div>
+            <div id="top10" style="height: 100%;width: 100%;background: linear-gradient( -45deg , #ff9800, #813a81, #607d8b, #4caf50);background-size: 400% 400%;" class="break border light tab-pane">
+                <button style="margin-left: -5px;" class="btn btn-success fa fa-arrow-left" title="الإعدادات" href="#" onclick="$('button.ae.label.bg-primary,#storyseo,#tnbehseo,label.ae.label.bg-primary.fa.fa-area-chart,.btn-success').removeClass('active'); $('.pnhead').text($(this).attr('title'));$('.dpnl').show();" data-toggle="tab" data-target="#more" aria-expanded="true">عودة</button>
+                <div class='tutop10' style="display:flex;justify-content: center;padding-top: 30px;">
+                    <div style='text-align: center;'><img alt="" class='fitimg u-top2' style='border-radius:50%;width:80px;height:80px;border:2px solid #000;margin: 10px 25px 10px 10px'><br>
+                        <img id="silver" alt="" style='width: 50px;display:block;margin-top: -50px;margin-left: 24px;'>
+                        <span style='position: relative;font-family: cursive;width:100px;left: -7px' class='u-topic2 break'></span>
+                    </div>
+                    <div style='text-align: center;'>
+                        <img alt="" class='fitimg u-top1' style='border-radius:50%;width:80px;height:80px;border:2px solid #000'>
+                        <img id="crown" alt="" style='width: 45px;margin-block-start: -196px;'>
+                        <img id="gold" alt="" style='width: 50px;display:block;margin-top: -60px;'>
+                        <span style='position:relative;font-family: cursive;width:100px' class='u-topic1 break'></span>
+                    </div>
+                    <div style='text-align: center;'><img alt="" class='fitimg u-top3' style='border-radius:50%;width:80px;height:80px;border:2px solid #000;margin: 20px 10px 10px 25px'>
+                        <img id="bronz" alt="" style='width: 50px;display:block;margin-top: -48px;margin-left: 40px;'>
+                        <span style='position: relative;font-family: cursive;width:100px;left: 9px' class='break u-topic3'></span>
+                    </div>
+                </div>
+                <div style="display:flex;text-align:center;color:#fff">
+                    <div style='width:100px;height:90px;background:#47ad61;box-shadow: 0px -10px 2px #7eca68;-webkit-text-stroke: thick;margin-top:10px'><span style='position:relative;font-size:1cm !important;top:30px'>2</span></div>
+                    <div style='width:111px;height:100px;background:#69bb55;box-shadow: 0px -10px 2px #7eca68;-webkit-text-stroke: thick;'><span style='position:relative;font-size:1cm !important;top:35px'>1</span></div>
+                    <div style='width:100px;height:80px;background:#47ad61;box-shadow: 0px -10px 2px #7eca68;-webkit-text-stroke: thick;margin-top:20px;'><span style='position:relative;font-size:1cm !important;top:25px'>3</span></div>
+                </div>
+                <div class='ltop' style='height: auto;background:#fff'>
+                </div>
+            </div>
+            <div id="notf" style="height: 100%; width: 100%; padding: 0px 5px;" class="break border light tab-pane">
+                <button style="margin-left: -5px;" class="btn btn-success fa fa-arrow-left" title="الإعدادات" href="#" onclick="$('button.ae.label.bg-primary,#storyseo,#tnbehseo,label.ae.label.bg-primary.fa.fa-area-chart,.btn-success').removeClass('active'); $('.pnhead').text($(this).attr('title'));$('.dpnl').show();" data-toggle="tab" data-target="#more" aria-expanded="true">عودة</button>
+                <button class="btn btn-danger fa fa-times pull-right" style="margin-right: -5px;" onclick="if(!confirm(`هل أنت متأكد من حذف كل التنبيهات؟`)){return}else{$('div#notficse').empty()}">تفريغ التنبيهات للتسريع</button>
+                <div class="chat_pane__container" id="notficse"></div>
+            </div>
+            <div id="storyes" style="height: 100%; width: 100%; padding: 0px 5px;" class="break border light tab-pane">
+                <button style="margin-left: -5px;" class="btn btn-success fa fa-arrow-left" title="الإعدادات" href="#" onclick="$('button.ae.label.bg-primary,#storyseo,#tnbehseo,label.ae.label.bg-primary.fa.fa-area-chart,.btn-success').removeClass('active'); $('.pnhead').text($(this).attr('title'));$('.dpnl').show();" data-toggle="tab" data-target="#more" aria-expanded="true">عودة</button>
+                <div class="chat_pane__container" style="margin-top: 5px;" id="storyvewo">
+                    <div class="addstory">
+                        <img class="img_str" style="border-radius:50%;width:60px;height:60px;border: 1.5px solid #226ecd;padding:2px" src="<%= pic %>">
+                        <i onclick="Send_STORY()" class="fa fa-plus-circle" style="font-size: 20px !important;position: absolute;margin-top: 35px;margin-left: -15px;background: #fff;border-radius: 50%;"></i>
+                    </div>
+                </div>
+                <div id="stories" style="display: inline-block; width: 110%;" class="storiesWrapper"></div>
+            </div>
+            <div id="settings" style="width:100%;padding:0px;position: absolute;top:32px;bottom:0px;" class="break border light tab-pane">
+                <data class="c-flex break" style="width: 100%;height: 100%;">
+                    <div class="borderg c-flex corner" style="background-color: white;width: 100%;">
+                        <div class="d-flex">
+                            <div class="ppop break2" style="z-index:9000;position: fixed;display:none">
+                                <div class="c-flex break" style="max-height:400px;max-width:304px;padding:2px;">
+                                    <span class="fl fa fa-image btn-success btn border" onclick="sendpic(1);" style="outline: 1px solid #0000001f;margin:1px;margin-top:4px;text-align: center;;">تغير الصوره</span></br>
+                                    <input accept="image/*" type="file" id="change_avatar_input" style="position: absolute; top: -1000px">
+                                    <span onclick="SEND_EVENT_SEOHOST('setpic',{pic: '<%= pic %>',ispic:1});" class="fl fa fa-ban btn-danger btn border" style="outline: 1px solid #0000001f;margin:1px;margin-top:4px;text-align: center;">حذف الصوره</span></br>
+                                    <span class="fl fa fa-image btn-success btn border" onclick="sendpic(2);" style="outline: 1px solid #0000001f;margin:1px;margin-top:4px;text-align: center;;">تغير الغلاف</span></br>
+                                    <span onclick="SEND_EVENT_SEOHOST('setpic',{pic: '<%= pic %>',ispic:2});" class="fl fa fa-ban btn-danger btn border" style="outline: 1px solid #0000001f;margin:1px;margin-top:4px;text-align: center;">حذف الغلاف</span>
+                                </div>
+                            </div>
+                            <img style="width: 150px;height: 98px;background-size: contain;background-position: center center; ;background-color: #272727;" onclick="var imgprofile=$('#settings > data > div.borderg.c-flex.corner > div:nth-child(1) > img'); if($(this).hasClass('fa-expand')){ $('.ppop.break2').hide(); } else{ $('.ppop.break2').show(); } $(this).toggleClass('fa-expand fa-compress');" class="fitimg flex-grow-1 borderg spic hand">
+                            <div>
+                                <div class="d-flex" style="padding: 1px;margin-top:2px;height:32px;">
+                                    <div style="position: relative; display: inline-block;" class="scolor-container">
+                                        <input class="scolor" type="hidden" name="scolor" value="#000" />
+                                        <button onclick="toggleColorPicker('.scolor')" class="cpick border btn scolor" style="width: 38px; margin-left: auto; height: 30px;" v="#000">
+                                        </button>
+                                    </div>
+                                    <div style="display: inline-block;width: 90px;margin-left: 1px;" class=" nosel label bg-primary">لون الإسم</div>
+                                </div>
+                                <div class="d-flex" style="padding: 1px;height:32px;">
+                                    <div style="position: relative; display: inline-block;" class="mcolor-container">
+                                        <input class="mcolor" type="hidden" name="mcolor" value="#000" />
+                                        <button onclick="toggleColorPicker('.mcolor')" class="cpick border btn mcolor" style="width: 38px; margin-left: auto; height: 30px;" v="#000">
+                                        </button>
+                                    </div>
+                                    <div style="display: inline-block;width: 90px;;margin-left: 1px;" class=" nosel label bg-primary">لون الخط</div>
+                                </div>
+                                <div class="d-flex" style="padding: 1px;height:32px;">
+                                    <div style="position: relative; display: inline-block;" class="sbg-container">
+                                        <input class="sbg" type="hidden" name="sbg" value="#000" />
+                                        <button onclick="toggleColorPicker('.sbg')" class="cpick border btn sbg" style="width: 38px; margin-left: auto; height: 30px;" v="#000">
+                                        </button>
+                                    </div>
+                                    <div style="display: inline-block;width: 90px;padding:1px;margin-left: 1px;" class="nosel label bg-primary">لون الخلفيه</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex" style="padding: 1px;">
+                            <textarea class="stopic flex-grow-1" style="height:48px;padding:4px;resize: none;">
+              </textarea>
+                            <div style="display: inline-block;width: 90px;margin-left: 1px;height:32px;" class="nosel label bg-primary ">الزخرفه</div>
+                        </div>
+                        <div class="d-flex" style="padding: 1px;">
+                            <textarea class="smsg flex-grow-1" style="height:64px;max-height: 64px; resize: none;">
+              </textarea>
+                            <div style="display: inline-block;width: 90px;margin-left: 1px;height:32px;" class=" nosel label bg-primary">الحاله</div>
+                        </div>
+                        <span id="ping" class="fr mini nosel" style="text-align: center;padding: 4px;min-width: 90px;margin-top: -31px;margin-left: 68%;">
+                        </span>
+                        <button class="border btn mini btn-success hand " style="padding:6px;width: 99%;margin-left: 2px;margin-top: 6px;margin-bottom: 4px;" onclick="setprofile();">
+                            <span class=" fa fa-edit">
+                            </span>حـفـظ التغيرات</button>
+                        <button class="border label mini label-success hand fa fa-edit fr prof" style="text-align: center;height: 37px;padding: 9px;background-color: crimson !important;border: 1px solid rgb(255, 255, 255) !important;color: white;font-size: 14px !important;font-weight: 900 !important;width: 99%;margin: 1px 1px;" onclick="$('.listHome').slideToggle(); atar()"> صمم عضويتك بنفسك </button>
+                        <div style="display: none;" class="listHome">
+                            <div class="listitem">
+                                <div onclick="$('.listHome').slideToggle();" class="getborder4 desginliste mb-4">
+                                    <img src="no.png" onclick="addback(' ',1)" />
+                                    <div id="back" style="display: flex;"></div>
+                                </div>
+                                <div onclick="$('.listHome').slideToggle();" class="getborder4 desginlist mb-4">
+                                    <img src="no.png" onclick="addback(' ',2)" />
+                                    <div id="atar" style="display: flex;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-flex flex-grow-1">
+                        <select id="zoom" style="width: 98%;margin:1px 4px;" class=" btn btn-primary" onchange="document.body.style.zoom=$(this).val();setv('zoom',$(this).val());fixSize();">
+                            <option seleceted="seleceted" value="1">%100 - حجم الخطوط</option>
+                            <option value="1.10">%110 - حجم الخطوط</option>
+                            <option value="1.05">%105 - حجم الخطوط</option>
+                            <option value="0.95">%95 - حجم الخطوط</option>
+                            <option value="0.9">%90 - حجم الخطوط</option>
+                            <option value="0.8">%80 - حجم الخطوط</option>
+                            <option value="0.7">%70 - حجم الخطوط</option>
+                            <option value="0.6">%60 - حجم الخطوط</option>
+                            <option value="0.5">%50 - حجم الخطوط</option>
+                        </select>
+                        <label onclick="if (nopm){nopm=false;$(this).find('span').removeClass('fa-check');}else{nopm=true;$(this).find('span').addClass('fa-check');};SEND_EVENT_SEOHOST('busy',{busy:nopm});" style="background-color: ghostwhite;color: black;margin:1px 4px; padding:6px;width: 98%;text-align: center;" class="label tc border btn fl"><span class="fa fl"></span><span class="fa fr fa-comment" style="padding:0px 4px;"></span>تعطيل المحادثات الخاصه</label>
+                        <label onclick="if (nonot){nonot=false;$(this).find('span').removeClass('fa-check');}else{nonot=true;$(this).find('span').addClass('fa-check');} ;" style="background-color: ghostwhite;color: black;margin:1px 4px; padding:6px;width: 98%;text-align: center;" class="label tc border btn fl"><span class="fa fl"></span><span class="fa fr fa-envelope-o" style="padding:0px 4px;"></span>تعطيل التنبيهات</label>
+						<label title="الإضافات والميزات" href="#" onclick="$('.label.tc.border.btn.fl').removeClass('active');$('.pnhead').text($(this).attr('title'));$('.dpnl').show();" data-toggle="tab" data-target="#more" style="background-color: ghostwhite;color: black;margin:1px 4px; padding:6px;width: 98%;text-align: center;" class="label tc border btn fl more" aria-expanded="true">الإضافات والميزات</label>
+                        <label onclick="pmsg();" style="background-color: ghostwhite;color: black;margin:1px 4px; padding:6px;width: 98%;" class="label tc border pmsg btn fl">
+                            <span class="fl fa fa-send">
+                            </span>إرسال إعلان</label>
+                        <label onclick="pmsg1();" style="width: 98%; background-color: ghostwhite; color: black; margin: 4px;width: 98%;" class="label tc border pmsg btn fl">
+                            <span class="fl fa fa-send"></span>اعلان مهم
+                        </label>
+                        <label onclick="if(myroom!=null){redit(myroom);}" style="background-color: ghostwhite;color: black;margin:1px 4px; padding:6px;width: 98%;" class="label tc border redit btn fl">
+                            <span class="fl fa fa-home">
+                            </span>إداره الغرفه</label>
+                        <label id="chngpass" onclick="ChangePassword();" style="background-color: ghostwhite; color: black; margin: 1px 4px; padding: 6px; display: block;width: 98%;" class="label tc border btn fl">
+                            <span class="fl fa fa-key"></span>تغيير كلمة المرور
+                        </label>
+                        <div class="flex-grow-1"></div><label onclick="window.open('cp/token='+token,'_blank');" style="background-color: ghostwhite;color: black;margin:1px 4px; padding:6px;width: 98%;" class="label tc border cp btn bg-success fl">
+                            <span class="fl fa fa-star">
+                            </span>لوحه التحكم</label>
+						<label onclick="confirmLogout();" style="margin:1px 4px; padding:6px;width: 98%;" class="label border btn bg-danger tc fl">
+   						    <span class="fl fa fa-sign-out"></span>تسجيل خروج</label>
+                    </div>
+                </data>
+            </div>
+        </div>
+    </div>
+    <div class="modal " id="upro" role="dialog" style="z-index: 2100;">
+        <div class="modal-dialog">
+            <div class="modal-content" style="width: 340px; margin: -1px;">
+                <div style="color: white; margin-top: -1px;" onclick=" $(this).parent().parent().parent().modal('hide');" class="modal-header bg-primary">
+                    <span class="pull-right clickable badge"><i class="fa fa-times"></i></span>
+                    <label style="margin: 1px; max-width: 90%;" class="mini dots nosel modal-title">إنشاء غرفه جديدة</label>
+                </div>
+                <div class="modal-body" style="padding: 1px;">
+                    <div class="light fl pro center break" style="width: 100%; border: 1px solid lightgrey; padding: 0px; margin: 0px;">
+                        <div class="notadmin">
+                            <center>
+                                <img class="fitimg aftar" style="width: 100%; height: 180px; background-size: 100% 100%;">
+                                <img class="u-pic lazy fitimg" style="width: 51%; height: 170px; border-radius: 0px; background-size: 100% 100%; position: relative;border-radius: 15px;margin: -75px 0px 6px !important; box-shadow: 0 0 11px 0;">
+                                <div class="gifts_picker" style="display: none;">
+                                    <div class="gifts_picker__contianer">
+                                    </div>
+                                    <button class="gifts_picker__contianer__clear btn btn-primary fa fa-times fl">سحب الهدية</button><button onclick="$('.gifts_picker').hide()" class="gifts_picker__contianer__close btn btn-danger fa fa-times fr">إخفاء الهدايا</button>
+                                    <div class="clear"></div>
+                                </div>
+                                <label style="width:100%;text-align:end;margin-bottom:0px;" class="">
+                                    <div style="width:100%;padding:2px;text-align: center;" class="fl u-msg"></div>
+                                    <div class="fl mini u-co" style="margin:4px;"></div>
+                                    <div class="timetoday" style="margin-right: 5px;"></div>
+                                    <div class="pointtop" style="margin-right: 5px;"></div>
+                                    <div class="ui-corner-all ui-shadow fr u-room"></div>
+                                    
+                                </label>
+                            </center>
+                            <span class="fl fa fa-comment btn ui-corner-all ui-shadow ui-btn ui-btn-inline upm borderg" style="color: black; margin: 2px; width: 106px; text-align: center;">محادثه خاصه</span>
+                            <span class="fl fa fa-envelope-o btn ui-corner-all ui-shadow ui-btn ui-btn-inline unot borderg" style="color: black; margin: 2px; width: 106px; text-align: center;">تنبيه</span>
+                            <span class="fl fa fa-heart btn ui-corner-all ui-shadow ui-btn ui-btn-inline ulike borderg" style="margin: 2px; color: red; width: 106px; text-align: center;">0</span>
+                            <span data-trigger="focus" tabindex="0" data-toggle="popover" class="fl fa fa-diamond btn ui-corner-all ui-shadow ui-btn ui-btn-inline ugift borderg" style="color: blue; margin: 2px; width: 106px; text-align: center;">
+                                ارسل هديه
+                            </span>
+                            <span class="fl fa fa-search btn ui-corner-all ui-shadow ui-btn ui-btn-inline uh borderg" style="color: black; margin: 2px; width: 106px; text-align: center;">كشف النكات</span>
+                            <span class="fl fa fa-ban btn ui-corner-all ui-shadow ui-btn ui-btn-inline udelpic borderg" style="color: maroon; margin: 2px; width: 106px; text-align: center;">حذف الصوره</span>
+                            <span data-trigger="focus" tabindex="0" data-toggle="popover" class="fl fa fa-star btn ui-corner-all ui-shadow ui-btn ui-btn-inline ubnr borderg" style="color: deeppink; margin: 2px; width: 106px; text-align: center;">
+                                البنر
+                            </span>
+                            <span class="fl fa fa-user-times btn ui-corner-all ui-shadow ui-btn ui-btn-inline urkick borderg" style="color: darkorchid; margin: 2px; width: 106px; text-align: center;">طرد من الغرفه</span>
+                            <span class="fl fa fa-ban btn ui-corner-all ui-shadow ui-btn ui-btn-inline ukick borderg" style="color: crimson; margin: 2px; width: 106px; text-align: center;">طرد</span>
+                            <span class="fl fa fa-ban btn ui-corner-all ui-shadow ui-btn ui-btn-inline uban borderg" style="color: crimson; margin: 2px; width: 106px; text-align: center;">باند</span>
+                            <span class="fl fa fa-warning btn ui-corner-all ui-shadow ui-btn ui-btn-inline ureport borderg" style="color: black; margin: 2px; width: 106px; text-align: center;">تبليغ</span>
+                            <span class="fl fa fa-ban btn ui-corner-all ui-shadow ui-btn ui-btn-inline meiut borderg" style="color: #cc3232; margin: 2px; width: 106px; text-align: center;">اسكات</span>
+                            <span class="fl fa fa-ban btn ui-corner-all ui-shadow ui-btn ui-btn-inline umute borderg" style="color: red; width: 106px; text-align: center;">تجاهل</span>
+                            <span class="fl fa fa-check btn ui-corner-all ui-shadow ui-btn ui-btn-inline uunmute borderg" style="color: red; width: 106px; text-align: center;">إلغاء التجاهل</span>
+                            <div class="border nickbox fl" style="padding:4px;margin-top:2px;width:100%;">
+                                <label class="label fl bg-primary" style="height: 32px;padding: 8px;">الزخرفه</label>
+                                <input class="border corner  fl u-topic" style="height:32px;padding:4px;width:60%;resize:none; " />
+                                <button class="btn btn-primary u-nickc fr fa fa-save">تغير</button>
+                            </div>
+                            <div class="border fl likebox" style="padding:4px;margin-top:2px;width:100%;">
+                                <label class="label fl bg-primary" style="height: 32px;padding: 8px;">لايكات</label>
+                                <input type="number" style="height:32px;padding:4px;width:60%;resize:none; " class="border corner  fl  likec">
+                                <button class="ulikec btn btn-primary fr fa fa-save" style="margin:2px;">حفظ</button>
+                            </div>
+                            <div class="border fl msgbox" style="padding:4px;margin-top:2px;width:100%;">
+                                <label class="label fl bg-primary" style="height: 32px;padding: 8px;">الحاله</label>
+                                <input type="text" placeholder="الحاله" style="height:32px;padding:4px;width:60%;resize:none; " class="border corner  fl  usmsg" />
+                                <button class=" usmsgs btn btn-primary fr fa fa-save" style="margin: 2px;">حفظ</button>
+                            </div>
+                            <div class="border fl powerbox" style="padding:4px;margin-top:2px;width:100%;">
+                                <label class="label fl bg-primary" style="height: 32px;padding: 8px;">الرتبة</label>
+                                <select style="width:200px;display:inline;" style="height: 32px;padding: 8px;" class="userpower selbox form-control">
+                                </select><br><br>
+                                <label class="label fl bg-primary" style="height: 32px;padding: 8px;">ينتهي بعد</label>
+                                <input type="number" style="height:32px;padding:4px;width: 185px;resize:none;" class="userdays border corner  fl ">
+                                <button class="btn btn-primary fr fa fa-save upower" style="margin:2px;">حفظ</button>
+                            </div>
+                            <div class="border fl roomzbox" style="padding:4px;margin-top:2px;width:100%;">
+                                <label class="label fl bg-primary" style="height: 32px;padding: 8px;">الغرفه</label>
+                                <select style="width:200px;display:inline;" style="height:32px;padding:4px;width:60%;resize:none; " class="roomz selbox form-control">
+                                </select><br><br>
+                                <label class="label fl bg-primary" style="height: 32px;padding: 8px;">كلمه المرور</label>
+                                <input type="text" class="rpwd border corner  fl " style=" height:32px;padding:4px;width: 185px;resize:none;">
+                                <button class="btn btn-primary fr fa fa-save uroomz" style="margin:2px;">نقل</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <x id="userslogin" style="display: none;">
+        <div class="border chat_pane__user_item " style="left: 0px;">
+            <p class="chat_pane__user_item__avatar">
+                <img class="state_active" width="36" height="36" alt="">
+            </p>
+            <div>
+                <h5 class="chat_pane__user_item__name"><span class="username">
+                        <img src="" class="username__icon fl" alt="" style="max-height: 16px">
+                        <span class="username__wrapper"></span>
+                    </span>
+                </h5>
+                <h5 class="chat_pane__user_item__status">
+                    <span></span>
+                </h5>
+            </div>
+            <img class="chat_pane__user_item__flag" alt="" width="16" height="16" src="">
+            <div class="clear">
+            </div>
+        </div>
+    </x>
+    <x id="uhtml" style="display: none;">
+        <div class="hand nosel fl uzr borderg" style="text-align: left; background-color: white; border-radius: 0px !important; width: 100%; margin: 0px !important; border-top: 0px; padding-right: 1px;">
+            <img class="fl ustat" style="width: 4px;height: 54px" />
+            <img style="width: 80px; margin: 0px 0px 0px -2px; padding: 42px; background-size: 100% 100%; height: 80px !IMPORTANT; display:none;" class="fitimg fl imgbaqer" />
+            <img style="min-height: 54px; max-height: 62px; margin-left: 1px; min-width: 48px; width: 56px;" class="fitimg fl u-pic" />
+            <label class="fl muted fa" style="color: indianred; margin-left: -50px;">&nbsp;</label>
+            <img class="fr co" style="width: 18px;height: 18px;border-radius: 1px;margin-top: -2px;margin-left: 1px;object-fit: contain;" />
+            <span class="fr uhash" style="color: grey; font-size: 70%!important; margin-top: 13px; margin-right: -18px;"></span>
+            <div style="width: 204px; padding: 2px 4px;" class="fl break">
+                <div style="width: 100%; margin-top: -2px; display: flex;" class="fl">
+                    <img class="fl u-ico" style="object-fit: contain; min-height: 14px;" />
+                    <div class="fl" style="width: 82%;"><span style="margin-top: 1px; padding: 0px 2px; max-width: 100%; border-radius: 3px;" class="corner u-topic dots"></span></div>
+                </div>
+                <div style="width:100%;color:#888;margin-top:4px;" class="fl mini u-msg"></div>
+            </div>
+        </div>
+    </x>
+    <x id="utop" style="display: none;">
+        <div class="hand nosel fl uzr borderg" style="padding:5px;text-align: left; background-color: white; border-radius: 0px !important; width: 100%; margin: 0px !important; border-top: 0px; padding-right: 1px;">
+            <span class="fl ntop" style="color:#666;padding: 10px;text-align: center;font-weight: bold;font-family:sans-serif,'trebuchet ms','lucida grande','lucida sans unicode',arial,helvetica">1</span>
+            <img style="width: 40px;height: 40px;border-radius: 50%;margin: 0 auto;" class="fitimg fl u-pic" />
+            <text class="fr co" style="padding:10px;color:#666;text-align: right;font-weight: bold;font-family:sans-serif,'trebuchet ms','lucida grande','lucida sans unicode',arial,helvetica" /></text>
+            <div style="width: 150px; padding: 2px 4px;" class="fl break">
+                <div style="width: 100%; margin-top: -2px; display: flex;" class="fl">
+                    <div class="fl" style="width: 82%;"><span style="font-family:sans-serif,'trebuchet ms','lucida grande','lucida sans unicode',arial,helvetica;margin-top: 10px; padding: 0px 2px; max-width: 100%; border-radius: 3px;font-size:13px !important" class="corner u-topic dots"></span></div>
+                </div>
+            </div>
+        </div>
+    </x>
+    <x id="rhtml" style="display: none;">
+        <div class="room borderg hand nosel fl" style="border-radius: 0px !important; background-color: white; width: 100%; padding: 3px; margin: 0px; margin-left: 2px;">
+            <img style="min-width: 52px; width: 52px; height: 46px; background-color: rgb(243, 243, 243); margin-right: 4px;" class="fl u-pic" />
+            <span class=" fa fa-user label bg-primary fr uc" style="padding: 4px; margin-right: -1px; border-radius: 3px;"></span>
+            <div style="width: 63%;" class="fl">
+                <div style="width: 100%; margin-top: -1px;" class="fl">
+                    <div style="padding: 0px 4px;max-width: 100%;border-radius: 2px;color: rgb(0, 0, 0);" class="u-topic ui--all dots">{1}</div>
+                </div>
+                <div style="color:#888;margin-top:-1px;" class="fl mini u-msg"></div>
+            </div>
+        </div>
+    </x>
+    <x id="callnot" style="display:none;">
+        <div class="border bgg" style="position:absolute;top:60px;margin-left:60px;z-index:9999;width:260px;padding:4px;">
+            <div class="uzer">
+            </div>
+            <div id="audiocall">
+                <button class="label bg-warning callstat">..</button>
+            </div>
+            <video style="display: none;" id="remote-video"></video>
+            <video style="display: none;" id="local-video"></video>
+            <button class="btn btn-success callaccept fa fa-phone">قبول</button>
+            <button class="btn btn-danger calldeny fa fa-phone">رفض</button>
+            <button onclick="meuted()" class="btn fa fa-microphone-slash meutee"></button>
+            <button onclick="volumeup();" class="btn fa fa-volume-high vulomeup"></button>
+        </div>
+    </x>
+    <x id="uhead" style="display: none;">
+        <div class="fl uzr" style="margin: 3px; width: 65%;">
+            <img id="si1" class="fl ustat" style="width: 4px; height: 22px;" />
+            <img style="width: 36px; height: 36px;" class="fitimg fl hand u-pic" />
+            <div style="width: 39px;" class="fl filw">
+                <div style="width: 100%; margin-top: 0px;" class="fl">
+                    <img class="fl u-ico" alt="" />
+                    <div class="fl" style="width: 90%;"><span style="max-width: 100%; padding: 1px 8px; border-radius: 3px;" class="corner nosel u-topic dots">{1}</span></div>
+                </div>
+            </div>
+        </div>
+    </x>
+    <x id="pop" class="hid">
+        <div class="bgg corner" style="outline: 1px solid gray; overflow-y: hidden; display: none; position: absolute; top: 1px; min-height: 180px; max-height: 500px; height: 50%; width: 99%; max-width: 500px; padding-bottom: 25px; z-index: 10;">
+            <div style="width: 100%; height: 30px;" class="head nosel bg fl">
+                <label class="label fl hand fa fa-info title" style="margin: 2px; margin-right: 2px;">&nbsp;</label>
+                <label style="padding: 8px;" onclick=" $(this).parent().parent().remove();" class="btn minix btn-danger pphide fr border fa fa-close"="">
+                    &nbsp;&nbsp;
+                </label>
+            </div>
+            <div class="body fl filh" style="min-height: 100%; width: 100%; height: 100%; overflow: hidden;"></div>
+        </div>
+    </x>
+    <x id="cw" class="hid">
+        <div class="bgg border corner" style="border-bottom-right-radius: 1em; overflow-y: hidden; display: none; position: absolute; top: 1px; min-height: 180px; max-height: 500px; height: 50%; width: 97%; max-width: 500px; padding-bottom: 25px;">
+            <div style="width: 100%; height: 30px;" class="head nosel bg fl">
+                <label class="label fl hand fa border fa-user" style="margin: 2px; margin-right: 2px;">&nbsp;</label>
+                <label style="padding: 8px;" class="btn minix btn-danger phide fr border fa fa-minus">&nbsp;&nbsp;</label>
+                <label style="padding: 8px;" onclick="var pp=$(this).parent().parent();if($(this).hasClass('fa-expand')){pp.css('height','86%');}else{pp.css('height','50%');}$(this).toggleClass('fa-expand fa-compress');fixSize();" class="btn btn-info fr border fa fa-expand">
+                    &nbsp;&nbsp;
+                </label>
+            </div>
+            <div class="cont fr filh" style="min-height: 100%; width: 100%; height: 100%;">
+                <div class="d2 filh break light" style="height: 99px;"></div>
+                <div class="tablebox footer d-flex light fl" style="width:100%;height:42px;padding:4px;">
+                    <div class="typ" style="display: flex; position: absolute; right: 20px; margin-top: -12px;">
+                        <div class="typingIndicatorBubbleDot"></div>
+                        <div class="typingIndicatorBubbleDot"></div>
+                        <div class="typingIndicatorBubbleDot"></div>
+                    </div>
+                    <button style=" margin-top:2px;margin-left:2px;" class="fa fa-phone call fl btn btn-success">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    <button style="margin-top:2px;margin-left:2px;" class="fa fa-microphone microphone fl btn btn-success">&nbsp;&nbsp;&nbsp;</button>
+                    <button style="margin-top:2px;margin-left:2px;display:none" class="fa fa-stop stopmico fl btn btn-success">&nbsp;&nbsp;&nbsp;</button>
+                    <button style="margin-left:4px; margin-right:3px;margin-top:2px;" class="fr fa fa-share-alt sndfile fl btn btn-primary">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    <img tabindex="0" role="button" data-toggle="popover" data-trigger="focus" class="fl nosel emo" style="padding:5px;width:34px;" id="smile3">
+                    <textarea placeholder="اكتب رسالتك هنا" class="fl flex-fill tbox" autocomplete="off"></textarea>
+                    <button style="margin-left:2px;" class="fa fa-send sndpm fl btn btn-primary">&nbsp;&nbsp;&nbsp;</button>
+                </div>
+            </div>
+        </div>
+    </x>
+    <div class="modal" id="cooment" role="dialog" style="margin: 5px;">
+        <div class="modal-dialog fr break" style="height: 50%; min-height: 300px; overflow: visible; margin-top: 2px;">
+            <div class="modal-content c-flex break" style="width: 306px; height: 100%; position: relative; right: 70px;">
+                <div style="color: white;" onclick=" $(this).parent().parent().parent().modal('hide');" class="modal-header bg-primary">
+                    <span class="pull-right clickable badge"><i class="fa fa-times"></i></span><label style="margin: 1px;" class="mini fa fa-comments modal-title">التعليقات</label>
+                </div>
+                <div class="modal-body break flex-grow-1 c-flex" style="display: contents; padding: 0px;">
+                    <div style="width: 100%; border-bottom: 1px solid black;" id="rmsg"></div>
+                    <div class="break flex-grow-1 r rplaymsg" style="height: 156px; background-color: #efefef; border-left: 4px solid grey;"></div>
+                    <div id="coomentes" class="tablebox footer d-flex light fl" style="width: 100%; height: 42px; padding: 4px;">
+                        <img id="smile3" role="button" class="fl nosel emobcc" style="padding: 5px; width: 34px; height: 34px;" src="imgs/emoii.gif" data-toggle="popover" />
+                        <textarea placeholder="اكتب رسالتك هنا" class="fl flex-fill tbox"></textarea>
+                        <button style="margin-left: 2px;" class="fa fa-send sndpm fl btn btn-primary">
+                            &nbsp;&nbsp;&nbsp;
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <x id="umsg" style="display:none;">
+        <div class="uzr fl corner borderg" style="border-radius:5px;margin-bottom:-2px;width:99.5%;padding:0px; background-color:white;">
+            <img style="width:44px;height:44px;margin-left:1px;margin-top:1px;" class="fl fitimg hand u-pic lazy ">
+            <span style="margin-top:2px;padding:0px 2px;margin-left:-20px;margin-right:4px;color:grey" class="fr minix tago"></span>
+            <span style="margin-top: 25px;padding:0px 2px;margin-left:-20px;margin-right:4px;color: #005aff;" class="showmsg fr"><i class="fa-sharp fa fa-solid fa-check"></i><i id="seobaqershowmsg" class="fa-sharp fa fa-solid fa-check"></i></span>
+            
+            <div class="uzr fl" style="padding:2px 4px;width:78%">
+                <div style="width:100%;display: flex;" class="fl">
+                    <img class="fl u-ico" style="object-fit: contain;min-height: 14px;">
+                    <span style="padding:0px 2px; margin-top:2px;display:block;max-width:82%;border-radius: 3px;" class="corner nosel u-topic dots fl hand"></span>
+                </div>
+                <br>
+                <div style="padding:0px; width:100%;" class=" u-msg   break  fl"></div>
+            </div>
+        </div>
+    </x>
+    <x id="not" class="hid">
+        <div onclick="$(this).remove();" style="min-width: 180px; max-width: 260px; border: 1px solid black; z-index: 5000000000; background-color: #efefef; position: absolute; top: 30%; margin-left: 30px; padding: 5px;" class="hand corner">
+            <center>
+                <div id="isfil" class="corner border label bg-primary" style="margin-top: -10px; padding-top: 6px; padding-left: 15px; width: 50%; padding-right: 15px;">تنبيه</div>
+            </center>
+        </div>
+    </x>
+    <div class="modal " id="mnot" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content" style="width: 310px;">
+                <div style="color: white;" onclick="$(this).parent().parent().parent().modal('hide') ;" class="modal-header bg-primary">
+                    <span class="pull-right clickable badge"><i class="fa fa-times"></i></span>
+                    <label style="margin: 1px;" class="mini fa fa-comments modal-title">إعلان</label>
+                </div>
+                <div class="modal-body" style="padding: 1px;">
+                    <div class="break" style="background-color: #efefef; padding: 5px;">
+                        <textarea placeholder="اكتب رسالتك هنا" class="fl corner" style="width: 100%; resize: none; direction: rtl; text-align: left;"></textarea>
+                        <label class="checkbox-inline"><input class="ispp" type="checkbox" value="" />إعلان خاص للسوابر؟</label><button class="rsave btn btn-primary fr"><span class="fa fa-send">إرسال</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal " id="mkr" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content" style="width: 310px;">
+                <div style="color: white;" onclick="$(this).parent().parent().parent().modal('hide') ;" class="modal-header bg-primary">
+                    <span class="pull-right clickable badge"><i class="fa fa-times"></i></span>
+                    <label style="margin: 1px;" class="mini fa fa-comments modal-title">إنشاء غرفه جديدة</label>
+                </div>
+                <div class="modal-body" style="padding: 1px;">
+                    <div class="break" style="background-color: #efefef; padding: 5px;">
+                        <input class="rtopic" style="width: 200px;" type="text" placeholder="عنوان الغرفه" />
+                        <input class="rabout" style="width: 200px;" type="text" placeholder="الوصف" />
+                        <input class="rwelcome" style="width: 200px;" type="text" placeholder="رساله الترحيب" />
+                        <input class="rlike" style="width: 200px;" type="number" placeholder="عدد ليكات الدخول للغرفة" min="0" max="1000000000000" />
+                        <input class="rpwd" style="width: 200px;" type="password" placeholder="كلمه المرور" />
+                        <input class="rmax" style="width: 200px;" type="number" placeholder="حجم الغرفه من 2 ألى 40" min="2" max="40" />
+                        <label style="display: block;position: absolute;top: 184px;right: 14px;" class="checkbox-inline"><input class="rdel" type="checkbox" value="" />تثبيت الغرفه</label><br />
+                        <img style="width: 75px;height: 75px;background-image: none;position: absolute;top: 7px;right: 15px;border-radius: 0;cursor: pointer;outline: none;font-size: 0 !important;" class="picroom" src="<%= room %>">
+                        <button style="width: 84px;position: absolute;top: 90px;padding: 2px !important;height: 25px;right: 8px;" onclick='$(".picroom").attr("src", "<%= room %>");' class=" borderbtn">بدون صورة</button>
+                        <div style="position: relative; display: inline-block;z-index:500000" class="colorrooms-container">
+                            <input class="colorrooms" type="hidden" name="colorrooms" value="" style="background: rgb(255, 255, 255);">
+                            <button onclick="toggleColorPicker('.colorrooms')" class="cpick border btn colorrooms" style="outline: none; width: 70px; margin: 0px 4px; height: 45px; position: absolute; border: 0px; top: -60px;left: 205px; background: rgb(255, 255, 255);" v="#000" value=""></button>
+                        </div>
+                        <br />
+                        <label class="checkbox-inline"><input class="broadcast" type="checkbox" value="" />تشغيل المايك</label><br />
+                        <button class="rmake btn btn-primary fl"><span class="fa fa-plus">(20)إنشاء الغرفه</span></button>
+                        <button class="rsave btn btn-primary fl"><span class="fa fa-edit">حفظ التعديلات</span></button>
+                        <button class="rdelete btn btn-danger fr"><span class="fa fa-times">حذف</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <x id="broadcasters" style="display: none;">
+        <div>
+            <div id="muteall" onclick="mutedall();" style="width: 50px; height: 50px; color: black; background-color: mediumseagreen !IMPORTANT; margin: -30px; position: absolute; left: 31px; top: 32px; border-radius: 0;" class="corner fl border ">
+                <span style="margin-left: 10%;font-size: 38px!important;margin-top:-2px" class="fa fa-volume-up"></span>
+            </div>
+            <span id="maice" class="fitimg prod before" data="1">
+                <div class="ismute"></div>
+                <div class="evant" style="display: none; height: 45px;">
+                    <span id="name" style="text-align: center;position: relative; color: #fff; top: 50px; display: block; font-size: 12px !important; background: #000;"></span>
+                    <div id="showpf" style="position: absolute; display: none; background: gray; margin-top: 45px; z-index: 1; padding: 5px; margin-left: -23px; border-radius: 10px;">
+                        <i class="stopmic btn btn-danger" style="width: 80px; font-size: 9px !important; display: none;">سحب المايك</i>
+                        <i class="sounds btn btn-info" style="width: 80px; font-size: 9px !important;">إيقاف الصوت</i><br />
+                        <i class="profiles btn btn-primary" style="width: 80px; font-size: 9px !important;">فتح البروفايل</i>
+                    </div>
+                </div>
+                <img id="imgmic" src="imgs/mic.png" style="width: 50px;height: 52px;margin: -2px;">
+            </span>
+            <span id="maice" class="fitimg prod before" data="2">
+                <div class="ismute"></div>
+                <div class="evant" style="display: none; height: 45px;">
+                    <span id="name" style="text-align: center;position: relative; color: #fff; top: 50px; display: block; font-size: 12px !important; background: #000;"></span>
+                    <div id="showpf" style="position: absolute; display: none; background: gray; margin-top: 45px; z-index: 1; padding: 5px; margin-left: -23px; border-radius: 10px;">
+                        <i class="stopmic btn btn-danger" style="width: 80px; font-size: 9px !important; display: none;">سحب المايك</i>
+                        <i class="sounds btn btn-info" style="width: 80px; font-size: 9px !important;">إيقاف الصوت</i><br />
+                        <i class="profiles btn btn-primary" style="width: 80px; font-size: 9px !important;">فتح البروفايل</i>
+                    </div>
+                </div>
+                <img id="imgmic" src="imgs/mic.png" style="width: 50px;height: 52px;margin: -2px;">
+            </span>
+            <span id="maice" class="fitimg prod before" data="3">
+                <div class="ismute"></div>
+                <div class="evant" style="display: none; height: 45px;">
+                    <span id="name" style="text-align: center;position: relative; color: #fff; top: 50px; display: block; font-size: 12px !important; background: #000;"></span>
+                    <div id="showpf" style="position: absolute; display: none; background: gray; margin-top: 45px; z-index: 1; padding: 5px; margin-left: -23px; border-radius: 10px;">
+                        <i class="stopmic btn btn-danger" style="width: 80px; font-size: 9px !important; display: none;">سحب المايك</i>
+                        <i class="sounds btn btn-info" style="width: 80px; font-size: 9px !important;">إيقاف الصوت</i><br />
+                        <i class="profiles btn btn-primary" style="width: 80px; font-size: 9px !important;">فتح البروفايل</i>
+                    </div>
+                </div>
+                <img id="imgmic" src="imgs/mic.png" style="width: 50px;height: 52px;margin: -2px;">
+            </span>
+            <span id="maice" class="fitimg prod before" data="4">
+                <div class="ismute"></div>
+                <div class="evant" style="display: none; height: 45px;">
+                    <span id="name" style="text-align: center;position: relative; color: #fff; top: 50px; display: block; font-size: 12px !important; background: #000;"></span>
+                    <div id="showpf" style="position: absolute; display: none; background: gray; margin-top: 45px; z-index: 1; padding: 5px; margin-left: -23px; border-radius: 10px;">
+                        <i class="stopmic btn btn-danger" style="width: 80px; font-size: 9px !important; display: none;">سحب المايك</i>
+                        <i class="sounds btn btn-info" style="width: 80px; font-size: 9px !important;">إيقاف الصوت</i><br />
+                        <i class="profiles btn btn-primary" style="width: 80px; font-size: 9px !important;">فتح البروفايل</i>
+                    </div>
+                </div>
+                <img id="imgmic" src="imgs/mic.png" style="width: 50px;height: 52px;margin: -2px;">
+            </span>
+            <span id="maice" class="fitimg prod before" data="5">
+                <div class="ismute"></div>
+                <div class="evant" style="display: none; height: 45px;">
+                    <span id="name" style="text-align: center;position: relative; color: #fff; top: 50px; display: block; font-size: 12px !important; background: #000;"></span>
+                    <div id="showpf" style="position: absolute; display: none; background: gray; margin-top: 45px; z-index: 1; padding: 5px; margin-left: -23px; border-radius: 10px;">
+                        <i class="stopmic btn btn-danger" style="width: 80px; font-size: 9px !important; display: none;">سحب المايك</i>
+                        <i class="sounds btn btn-info" style="width: 80px; font-size: 9px !important;">إيقاف الصوت</i><br />
+                        <i class="profiles btn btn-primary" style="width: 80px; font-size: 9px !important;">فتح البروفايل</i>
+                    </div>
+                </div>
+                <img id="imgmic" src="imgs/mic.png" style="width: 50px;height: 52px;margin: -2px;">
+            </span>
+            <span id="charCount" class="fitimg prod before" data="6" style="width: 50px;height: 52px;float: right;margin-right: -50px;margin-top: -52px;font-size: 20px !important;!i;!;padding: 6px 6px;"></span>
+        </div>
+    </x>
+    <div id="StoryPanel" style="position:fixed;display:none;width:100%;height:100%;background:#000;z-index:99999999;left:0;top:0;padding:10px">
+        <div id="StoryProgress">
+            <div id="BarStory" class='brsy'></div>
+        </div>
+        <img class='st_pic fl' style="border-radius:50%;width:50px;height:50px;border:2px solid #fff">
+        <div style="float: left;padding: 10px;color: #fff;font-size: 15px !important;font-family: cursive;top: 25px;left: 55px;"> <span class='st_topic'></span><br>
+            <span class='st_time tago' style="font-size: 11px !important;color: darkgray;top: -6px;font-family: cursive;position: relative;"></span>
+        </div>
+        <div class='fr' style="right:10px">
+            <i class='fa fa-trash supstory' style="display:none;color:#fff;margin-right:20px;font-size:20px !important"></i>
+            <i class='storymuted fa fa-volume-up' style="display:none;color:#fff;margin-right:20px;font-size:20px !important"></i>
+            <i class='storyplay fa fa-play' style="display:none;color:#fff;margin-right:20px;font-size:20px !important"></i>
+            <i class='fa fa-close' onclick="HideStory()" style="color:#fff;font-size:20px !important;margin-right:10px"></i>
+        </div>
+        <div style="z-index: 11;font-size: 50px !important;color: #fff;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);" class='loadstory fa fa-spinner fa-pulse'></div>
+        <video class='st_v' id="st_v_p" style="position: absolute;width: 100%;height: 100%;top: 0px;display:none;left: 0px;z-index: -1;" autoplay>
+            <source>
+        </video>
+        <div class='st_p' style="position: absolute;width: 100%;height: 100%;top: 0px;display:none;left: 0px;z-index: -1;background-image: url();background-repeat: no-repeat;background-position: center;background-size: contain;">
+            <img id='st_p_t' src='' style="display:none">
+        </div>
+        <div class='st_view' style="position:absolute;bottom:10px;right:10px;color:#fff;font-size:13px !important">
+        </div>
+    </div>
+    <audio id="beep" preload="auto">
+        <source src="imgs/beep.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+            refreshonline()
+            load();
+            $((function () { $("#l1,#l2,#l3,button.btn.btn-primary").on("click", (() => { $("#playios")[0].play(), $("#playios").attr("loop", !0) })) }));
+			$("<div id='color-picker-icon'>" + "<img src='<%= logo %>' alt='Color Picker Icon'>" + "<div style='position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);'>" + "</div>" + "</div>").appendTo("body");
+			function updateCharacterCount() {var textBox = document.getElementById('tbox');var charCount = textBox.value.length;var charCountDisplay = document.getElementById('charCount');charCountDisplay.textContent = charCount;}
+            $("<div id=\"color-picker-panel\">\n" +
+                " <h4>اختر لون الخلفية</h4>\n" +
+                " <div class=\"custom-color\">\n" +
+                    " <div style=\"background-color: #a41e54;\" data-color=\"#a41e54\"></div>\n" +
+                    " <div style=\"background-color: #982072;\" data-color=\"#982072\"></div>\n" +
+                    " <div style=\"background-color: #98278f;\" data-color=\"#98278f\"></div>\n" +
+                    " <div style=\"background-color: #62007a;\" data-color=\"#62007a\"></div>\n" +
+                    " <div style=\"background-color: #3c007a;\" data-color=\"#3c007a\"></div>\n" +
+                    " <div style=\"background-color: #0d1c4d;\" data-color=\"#0d1c4d\"></div>\n" +
+                    " <div style=\"background-color: #6f6f6f;\" data-color=\"#6f6f6f\"></div>\n" +
+                    " <div style=\"background-color: #212121;\" data-color=\"#212121\"></div>\n" +
+                    " </div>\n" +
+                " <h4>اختر لون العناصر</h4>\n" +
+                " <div class=\"custom-color\">\n" +
+                    " <div style=\"background-color: #821d46;\" data-color=\"#821d46\"></div>\n" +
+                    " <div style=\"background-color: #7b215e;\" data-color=\"#7b215e\"></div>\n" +
+                    " <div style=\"background-color: #70276a;\" data-color=\"#70276a\"></div>\n" +
+                    " <div style=\"background-color: #4f0462;\" data-color=\"#4f0462\"></div>\n" +
+                    " <div style=\"background-color: #320561;\" data-color=\"#320561\"></div>\n" +
+                    " <div style=\"background-color: #081337;\" data-color=\"#081337\"></div>\n" +
+                    " <div style=\"background-color: #5c5c5c;\" data-color=\"#5c5c5c\"></div>\n" +
+                    " <div style=\"background-color: #111111;\" data-color=\"#111111\"></div>\n" +
+                    " </div>\n" +
+                " <input type=\"color\" id=\"bg-color-picker\" value=\"#333333\">\n" +
+                " <input type=\"color\" id=\"btn-primary-color-picker\" value=\"#000000\">\n" +
+                " <button id=\"apply-colors\">تطبيق الألوان</button>\n" +
+                "</div>").appendTo("body");
+			</script>
+			<script type="text/javascript" src="js/listcolor.js"></script>
+			<script type="text/javascript" src="js/seocolor.js?v3"></script>
+			<% if(script){ %>
+			<script type="text/javascript">
+			    <%-script %>
+        </script>
+       <% } %>
+      </body>
+     <script src="tt.js?xt"></script>
+    </html>
